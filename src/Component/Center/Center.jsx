@@ -1,15 +1,21 @@
 import './Center.css'
 import { BsFillCaretDownFill } from "react-icons/bs";
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 const Center = () => {
+    const percentage = 78;
+    const percentage1 = 95;
+    const percentage2 = 59;
+
     return (
-        <div className="px-8 pt-10 pb-10">
+        <div className="px-24 sm:pt-10 pb-10">
             <div>
                 <h2 className="text-blue-800 font-bold">Retirement Income</h2>
                 <h1 className="text-2xl font-semibold mb-5">Starting Year 2056</h1>
 
-                <div className='lg:flex justify-between'>
-                    <div className='mt-3 mr-5'>
+                <div className='lg:flex'>
+                    <div className='mt-3 mr-7'>
                         <h1 className='font-bold text-2xl'>$300,000</h1>
                         <p className='text-slate-500 font-semibold mb-2'>My Goal</p>
                         <div>
@@ -17,17 +23,17 @@ const Center = () => {
                         </div>
                     </div>
 
-                    <div className='flex'>
-                        <div className='mt-3 mr-5'>
-                            <h1 className='font-bold text-2xl'>$300,000</h1>
-                            <p className='text-slate-500 font-semibold mb-2'>My Goal</p>
+                    <div className='flex '>
+                        <div className='mt-3 mr-7'>
+                            <h1 className='font-bold text-2xl'>59%</h1>
+                            <p className='text-slate-500 font-semibold mb-2'>Goal Achieve</p>
                             <div>
                                 <hr style={{ color: 'blue' }} />
                             </div>
                         </div>
                         <div className='mt-3'>
-                            <h1 className='font-bold text-2xl'>$300,000</h1>
-                            <p className='text-slate-500 font-semibold mb-2'>My Goal</p>
+                            <h1 className='font-bold text-2xl'>K 300</h1>
+                            <p className='text-slate-500 font-semibold mb-2'>Est. Monthly Income</p>
                             <div>
                                 <hr style={{ color: 'blue' }} />
                             </div>
@@ -47,30 +53,92 @@ const Center = () => {
                 <div className='mt-10 lg:flex'>
                     <div>
                         <div className='flex mb-3'>
-                        <p><span className='font-semibold'>Age:</span> Under 30</p>
-                        <BsFillCaretDownFill className='mt-1 ml-1 text-slate-500 '/>
+                            <p><span className='font-semibold'>Age:</span> Under 30</p>
+                            <BsFillCaretDownFill className='mt-1 ml-1 text-slate-500 ' />
                         </div>
                         <hr />
 
                         <div className='flex mt-3 mb-3'>
-                        <p><span className='font-semibold'>Salary:</span> K 20 - k 30</p>
-                        <BsFillCaretDownFill className='mt-1 ml-1 text-slate-500 '/>
+                            <p><span className='font-semibold'>Salary:</span> K 20 - k 30</p>
+                            <BsFillCaretDownFill className='mt-1 ml-1 text-slate-500 ' />
                         </div>
                         <hr />
 
                         <div className='flex mt-3 mb-3'>
-                        <p><span className='font-semibold'>Age:</span> Gender Male</p>
-                        <BsFillCaretDownFill className='mt-1 ml-1 text-slate-500 '/>
+                            <p><span className='font-semibold'>Age:</span> Gender Male</p>
+                            <BsFillCaretDownFill className='mt-1 ml-1 text-slate-500 ' />
                         </div>
                         <hr />
                     </div>
 
-                    <div>
-                        hhj
+                    {/* Progress */}
+                    <div className='lg:ml-20 flex mx-auto mb-10 lg:justify-between sm:justify-between mt-2'>
+                        <div className='mr-4' style={{ width: 100, height: 10 }}>
+                            <CircularProgressbar
+                                value={percentage}
+                                text={`${percentage}%`}
+                                styles={{
+                                    path: {
+                                        stroke: '#3bd491',
+                                    },
+                                    trail: {
+                                        stroke: '#c3e8d8',
+                                    },
+                                    text: {
+                                        fill: 'black',
+                                        fontSize: '24px',
+                                        fontWeight: 'bold',
+                                    },
+                                }}
+                            />
+                            <div className='text-center font-semibold'>Average</div>
+                        </div>
+
+                        <div className='mr-4' style={{ width: 100, height: 10 }}>
+                            <CircularProgressbar
+                                value={percentage1}
+                                text={`${percentage1}%`}
+                                styles={{
+                                    path: {
+                                        stroke: '#3bd491',
+                                    },
+                                    trail: {
+                                        stroke: '#c3e8d8',
+                                    },
+                                    text: {
+                                        fill: 'black',
+                                        fontSize: '24px',
+                                        fontWeight: 'bold',
+                                    },
+                                }}
+                            />
+                            <div className='text-center font-semibold'>Top</div>
+                        </div>
+
+                        <div style={{ width: 100, height: 10 }}>
+                            <CircularProgressbar
+                                value={percentage2}
+                                text={`${percentage2}%`}
+                                styles={{
+                                    path: {
+                                        stroke: '#3bd491',
+                                    },
+                                    trail: {
+                                        stroke: '#c3e8d8',
+                                    },
+                                    text: {
+                                        fill: 'black',
+                                        fontSize: '24px',
+                                        fontWeight: 'bold',
+                                    },
+                                }}
+                            />
+                            <div className='text-center font-semibold'>Me</div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-
 
         </div>
     );

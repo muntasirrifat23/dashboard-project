@@ -3,7 +3,7 @@ import { BsFillCaretDownFill } from "react-icons/bs";
  
 const Left = () => {
     return (
-        <div className='bg-slate-100 px-6 pt-10 pb-10'>
+        <div className='bg-slate-100 px-16 pt-10'>
             {/* Header */}
             <div className='flex space-between mb-5'>
                 <div className="text-xl">
@@ -36,7 +36,7 @@ const Left = () => {
                 </div>
                 
                 {/* Button */}
-                <button className="btn btn-primary p-4 text-center mt-3 px-6 sm:w-full md:w-full lg:w-1/6">I want to<BsFillCaretDownFill/></button>
+                <button className="btn btn-primary p-4 text-center mt-3 px-6 sm:w-full ">I want to<BsFillCaretDownFill/></button>
             </div>
 
             {/* Main 2 */}

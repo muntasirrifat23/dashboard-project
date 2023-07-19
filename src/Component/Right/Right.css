@@ -1,0 +1,9 @@
+.line {
+    border: none;
+    height: 100px; 
+    width: 1px;
+    background-color: #401fc6;
+    transform: rotate(180deg);
+    justify-content: space-around;
+    display: flex;
+  }
