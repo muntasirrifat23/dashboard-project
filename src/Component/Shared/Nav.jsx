@@ -3,12 +3,14 @@ import { ImNewspaper } from "react-icons/im";
 import { BsCardList } from "react-icons/bs";
 import { FaRegUser } from "react-icons/fa";
 import { BiSearch } from "react-icons/bi";
+import { MdNotifications } from "react-icons/md";
+import { IoLogOutOutline } from "react-icons/io5";
 import './Nav.css'
 
 const Nav = () => {
     return (
         <div >
-            <div className="navbar text-black bg-white">
+            <div className="navbar text-black bg-white mr-5">
 
                 <div className="navbar-start">
                     {/* small */}
@@ -34,17 +36,17 @@ const Nav = () => {
                         </div>
                         <div>
                             <div className="text-black text-2xl text-slate-500 justify-between fixed top-40">
-                                <p className='mb-5'> <PiHouseLineBold /></p>
-                                <p className='mt-5'> <ImNewspaper /></p>
-                                <p className='mt-5'> <BsCardList /></p>
-                                <p className='mt-5'> <FaRegUser /></p>
+                                <p className='mb-9'> <PiHouseLineBold /></p>
+                                <p className='mt-9'> <ImNewspaper /></p>
+                                <p className='mt-9'> <BsCardList /></p>
+                                <p className='mt-9'> <FaRegUser /></p>
                             </div>
                         </div>
                         {/* bottom */}
                         <div>
                         <div className="text-black text-2xl text-slate-500 flex-rows space-between fixed bottom-0 bottom-4">
-                            <p className=''> <BiSearch /></p>
-                            <p className='mt-5'> <PiButterflyLight /></p>
+                            <p className=''> <MdNotifications /></p>
+                            <p className='mt-5'> <IoLogOutOutline /></p>
                         </div>
                     </div>
                     </div>
