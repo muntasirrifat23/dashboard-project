@@ -37,7 +37,7 @@ const Right = () => {
                 </div>
 
                 {/* Button */}
-                <button className="btn btn-primary w-full text-center">Update</button>
+                <button className="btn btn-primary w-full text-center text-white">Update</button>
                 <div className="flex text-blue-600 mt-6 text-center" style={{ justifyContent: 'center', alignItems: 'center' }}>
                     <h1>View Help Docs</h1>
                     <h1 className="mt-1"> <BsChevronRight /></h1>

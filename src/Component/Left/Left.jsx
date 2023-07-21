@@ -36,7 +36,7 @@ const Left = () => {
                 </div>
                 
                 {/* Button */}
-                <button className="btn btn-primary p-4 text-center mt-6 px-6 sm:w-full ">I want to<BsFillCaretDownFill/></button>
+                <button className="btn btn-primary p-4 text-center mt-6 px-6 sm:w-full text-white">I want to<BsFillCaretDownFill/></button>
             </div>
 
             {/* Main 2 */}
