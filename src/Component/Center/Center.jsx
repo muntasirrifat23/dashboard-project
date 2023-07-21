@@ -2,12 +2,17 @@ import './Center.css'
 import { BsFillCaretDownFill } from "react-icons/bs";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import CompoChart from './CompoChart';
 
 const Center = () => {
     const percentage = 78;
     const percentage1 = 95;
     const percentage2 = 59;
 
+    const hrStyle = {
+        borderTop: '2px solid blue',
+    };
+    
     return (
         <div className="px-24 sm:pt-10 pb-10">
             <div>
@@ -18,29 +23,50 @@ const Center = () => {
                     <div className='mt-3 mr-7'>
                         <h1 className='font-bold text-2xl'>$300,000</h1>
                         <p className='text-slate-500 font-semibold mb-2'>My Goal</p>
-                        <div>
-                            <hr style={{ color: 'blue' }} />
-                        </div>
+                        <hr style={hrStyle} />
                     </div>
 
                     <div className='flex '>
                         <div className='mt-3 mr-7'>
                             <h1 className='font-bold text-2xl'>59%</h1>
                             <p className='text-slate-500 font-semibold mb-2'>Goal Achieve</p>
-                            <div>
-                                <hr style={{ color: 'blue' }} />
-                            </div>
+                            <hr style={hrStyle} />
                         </div>
                         <div className='mt-3'>
                             <h1 className='font-bold text-2xl'>K 300</h1>
-                            <p className='text-slate-500 font-semibold mb-2'>Est. Monthly Income</p>
-                            <div>
-                                <hr style={{ color: 'blue' }} />
-                            </div>
+                            <p className='text-slate-500 font-semibold mb-2'>Est. Monthly Income </p>
+                            <hr style={hrStyle} />
+                             
                         </div>
                     </div>
-
                 </div>
+            </div>
+
+            {/* Chart */}
+            <div className='mt-8'>
+                <h1 className='font-bold text-2xl mb-3'>Contribution Overtime</h1>
+                <div className='flex mb-6' style={{ justifyContent: 'space-between' }}>
+                    <div className='lg:flex'>
+                        <h1> </h1>
+                        <h2 className='font-semibold text-slate-500'>Employer: </h2>
+                        <h3 className='font-semibold lg:ml-2'> K 73,500</h3>
+                    </div>
+                    <div className='lg:flex'>
+                        <h1> </h1>
+                        <h2 className='font-semibold text-slate-500'>Employee: </h2>
+                        <h3 className='font-semibold lg:ml-2'> K 52,500</h3>
+                    </div>
+                    <div className='lg:flex'>
+                        <h1> </h1>
+                        <h2 className='font-semibold text-slate-500'>Total Interest: </h2>
+                        <h3 className='font-semibold lg:ml-2'> K 244,313</h3>
+                    </div>
+                </div>
+                <div>
+                    <CompoChart></CompoChart>
+                </div>
+
+
             </div>
 
             {/* Bellow Part */}

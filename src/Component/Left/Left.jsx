@@ -3,7 +3,7 @@ import { BsFillCaretDownFill } from "react-icons/bs";
  
 const Left = () => {
     return (
-        <div className='bg-slate-100 px-16 pt-10'>
+        <div className='bg-slate-100 px-16 pt-10 pb-3'>
             {/* Header */}
             <div className='flex space-between mb-5'>
                 <div className="text-xl">
@@ -11,7 +11,7 @@ const Left = () => {
                 </div>
                 <div className="ml-5">
                     <h1 className="font-bold">Hi Rifat,</h1>
-                    <h3>Welcome Back</h3>
+                    <h3 className='font-semibold'>Welcome Back.</h3>
                 </div>
             </div>
 
@@ -36,33 +36,36 @@ const Left = () => {
                 </div>
                 
                 {/* Button */}
-                <button className="btn btn-primary p-4 text-center mt-3 px-6 sm:w-full ">I want to<BsFillCaretDownFill/></button>
+                <button className="btn btn-primary p-4 text-center mt-6 px-6 sm:w-full ">I want to<BsFillCaretDownFill/></button>
             </div>
 
             {/* Main 2 */}
-            <div className='mt-10'>
-                <h1 className='font-bold'>
+            <div className='mt-20'>
+                <h1 className='font-bold text-xl'>
                     Recent Transactions
                 </h1>
 
-                <h2 className='text-slate-500 mt-3'> 2020-08-07 </h2>
+                <h2 className='text-slate-500 mt-10'> 2020-08-07 </h2>
                 <h1 className='font-semibold'>
                 Withdrawal Transfer to Bank-XXX11
                 </h1>
-                <h5 className='mt-2' style={{width:'40%',}}><hr /></h5>
+                <h5 className='mt-2' style={{width:'40%',}}></h5>
+                <hr className='w-1/2 lg:w-full'/><hr className='w-1/2 lg:w-full'/>
 
-                <h2 className='text-slate-500 mt-3'> 2020-08-07 </h2>
+                <h2 className='text-slate-500 mt-6'> 2020-08-07 </h2>
                 <h1 className='font-semibold'>
                 Withdrawal Transfer to Bank-XXX11
                 </h1>
-                <h5 className='mt-2' style={{width:'40%',}}><hr /></h5>
+                <h5 className='mt-2' style={{width:'40%',}}></h5>
+                <hr className='w-1/2 lg:w-full'/><hr className='w-1/2 lg:w-full'/>
 
-                <h2 className='text-slate-500 mt-3'> 2020-08-07 </h2>
+
+                <h2 className='text-slate-500 mt-6'> 2020-08-07 </h2>
                 <h1 className='font-semibold'>
                 Withdrawal Transfer to Bank-XXX11
                 </h1>
-                <h5 className='mt-2' style={{width:'40%',}}><hr /></h5>
-   
+                <h5 className='mt-2' style={{width:'40%',}}></h5>
+                <hr className='w-1/2 lg:w-full'/><hr className='w-1/2 lg:w-full'/>
             </div>
 
 

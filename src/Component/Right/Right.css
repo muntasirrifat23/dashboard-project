@@ -7,3 +7,10 @@
     justify-content: space-around;
     display: flex;
   }
+
+.range-slider {
+  background: rgb(49, 49, 195);
+  height: 4px;
+  border-radius: 2px;
+}
+
