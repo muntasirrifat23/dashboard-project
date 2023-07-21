@@ -1,0 +1,24 @@
+.left-side-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Set the height as needed */
+    width: 50px; /* Set the desired width */
+    background-color: white; /* Set the background color */
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  

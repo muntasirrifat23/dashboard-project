@@ -1,43 +1,56 @@
+import { PiHouseLineBold, PiButterflyLight } from "react-icons/pi";
+import { ImNewspaper } from "react-icons/im";
+import { BsCardList } from "react-icons/bs";
+import { FaRegUser } from "react-icons/fa";
+import { BiSearch } from "react-icons/bi";
+import './Nav.css'
 
 const Nav = () => {
     return (
         <div >
-            <div className="navbar text-white bg-base-800">
-                
-                <div className="navbar-start">
-                        {/* small */}  
-                        <div className="navbar-center p-5 mb-15 text-white lg:hidden flex justify-center items-center fixed z-10 w-full text-white bottom-0 rounded-xl">
-                        <ul className="menu menu-horizontal px-1 text-2xl text-white bg-slate-800 rounded-xl bg-opacity-80 font-bold">
-                        <a className='ml-10 mt-2' href='#header'></a>
-                        <a className='ml-10 mt-2' href='#project'></a>
-                        <a className='ml-10 mt-2' href='#mySelf'></a>
-                        <a className='ml-10 mr-10 mt-2 mb-2' href='#contact'></a>
-                    </ul>
-                    </div>
-                   
+            <div className="navbar text-black bg-white">
 
-                    {/* name */}
-                    <div className='font-bold text-4xl ml-2' style={{ display: 'flex', alignItems: 'center' }}>
-                        MERN Stack Developer
+                <div className="navbar-start">
+                    {/* small */}
+                    <div className="navbar-center p-5 text-white lg:hidden  fixed z-10 w-full text-white bottom-0 rounded-xl">
+                        <ul className="menu menu-horizontal px-1 text-2xl text-black rounded-xl font-bold flex justify-between items-center text-slate-500">
+                            <a className=' mt-2'> <PiHouseLineBold /></a>
+                            <a className='mt-2'> <ImNewspaper /></a>
+                            <a className='mt-2'> <BsCardList /></a>
+                            <a className='mt-2'> <FaRegUser /></a>
+                            <a className='mt-2'> <BiSearch /></a>
+                        </ul>
                     </div>
+
                 </div>
                 {/* big */}
-                
-                <div className="navbar-center hidden lg:flex top-0 p-5  mb-15 z-10  text-white flex justify-center items-center fixed z-10 w-full text-white top-0 rounded-xl ">
-                    <ul className="menu menu-horizontal px-1 text-xl text-white bg-slate-800 rounded-xl bg-opacity-60">
-                        <a className='ml-3 mt-2' href='#header'> Home</a>
-                        <a className='ml-3 mt-2' href='#project'>Project</a>
-                        <a className='ml-3 mt-2' href='#mySelf'>My-Self</a>
-                        <a className='ml-3 mt-2 mr-3' href='#contact'> Contact</a>
-                    </ul>
+                <div className="navbar-center hidden lg:flex p-5 mb-15 z-10 justify-between fixed z-10 text-black top-0 left-side-navigation">
+                    <div className="justify-between ">
+                        <div>
+                        <div className="text-black text-2xl text-slate-500 flex-cols justify-between fixed top-0 top-5">
+                                <p className='mt-5 font-bold text-blue-400'> <PiButterflyLight /></p>
+                                <p className='mt-2'> <BiSearch /></p>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="text-black text-2xl text-slate-500 justify-between fixed top-40">
+                                <p className='mb-5'> <PiHouseLineBold /></p>
+                                <p className='mt-5'> <ImNewspaper /></p>
+                                <p className='mt-5'> <BsCardList /></p>
+                                <p className='mt-5'> <FaRegUser /></p>
+                            </div>
+                        </div>
+                        {/* bottom */}
+                        <div>
+                        <div className="text-black text-2xl text-slate-500 flex-rows space-between fixed bottom-0 bottom-4">
+                            <p className=''> <BiSearch /></p>
+                            <p className='mt-5'> <PiButterflyLight /></p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                   
                 </div>
-
-
-                <div className="navbar-end">
-                    <button></button>
-
-                </div>
-
 
 
             </div>
